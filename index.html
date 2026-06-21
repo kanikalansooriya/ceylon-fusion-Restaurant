@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceylon Fusion - Modern Sri Lankan & Fusion Bistro</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Experience premium modern Sri Lankan fusion dining in Colombo. Traditional Ceylon spices reimagined with international culinary art for local and foreign guests.">
+    <meta name="keywords"
+        content="Sri Lankan Restaurant, Fusion Dining, Colombo Cafe, Gourmet Hoppers, Ceylon Spice, Fine Dining Colombo, Tourist Food Sri Lanka">
+    <meta name="author" content="Ceylon Fusion">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- FontAwesome Icons for modern interactive assets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==========================================================================
+       1. Sticky Header / Navigation
+       ========================================================================== -->
+    <header class="main-header" id="main-header">
+        <div class="container header-container">
+            <a href="#" class="logo" id="logo" data-translate="brand">
+                Ceylon<span>Fusion</span>
+            </a>
+
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link active" data-translate="nav_home">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-translate="nav_about">Our Story</a></li>
+                    <li><a href="#menu" class="nav-link" data-translate="nav_menu">Signature Menu</a></li>
+                    <li><a href="#customizer" class="nav-link" data-translate="nav_customizer">Make to Taste</a></li>
+                    <li><a href="#chef" class="nav-link" data-translate="nav_chef">Chef Nuwan</a></li>
+                    <li><a href="#gallery" class="nav-link" data-translate="nav_gallery">Gallery</a></li>
+                    <li><a href="#testimonials" class="nav-link" data-translate="nav_reviews">Reviews</a></li>
+                    <li><a href="#reserve" class="nav-link" data-translate="nav_reserve">Book a Table</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-controls">
+                <!-- Currency Switcher (LKR/USD) -->
+                <div class="control-toggle" id="currency-toggle-container">
+                    <button class="toggle-btn active" id="curr-lkr">LKR (₨)</button>
+                    <button class="toggle-btn" id="curr-usd">USD ($)</button>
+                </div>
+
+                <!-- Mobile Navigation Button -->
+                <button class="mobile-nav-toggle" id="mobile-menu-toggle" aria-label="Toggle Navigation Menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==========================================================================
+       2. Dark Premium Hero Section
+       ========================================================================== -->
+    <section class="hero" id="home">
+        <div class="container hero-grid">
+            <div class="hero-content animate fade-up active">
+                <span class="hero-subtitle" data-translate="hero_subtitle">Experience Sri Lankan Cuisine
+                    Reimagined</span>
+                <h1 class="hero-title" data-translate="hero_title">
+                    <span>Fusion Dining</span> In The Heart Of Colombo
+                </h1>
+                <p class="hero-desc" data-translate="hero_desc">
+                    A culinary journey combining rich organic Ceylon spices with modern western techniques. Crafted to
+                    captivate both local palates and international travelers.
+                </p>
+                <div class="hero-btns">
+                    <a href="#reserve" class="btn btn-primary" data-translate="hero_btn_reserve">Reserve Table</a>
+                    <a href="#menu" class="btn btn-secondary" data-translate="hero_btn_menu">Explore Menu</a>
+                </div>
+            </div>
+
+            <div class="hero-image-wrapper animate zoom-in active">
+                <div class="hero-circle-bg"></div>
+                <img src="assets/hero_dish.png" alt="Premium Modern Sri Lankan Fusion Gourmet Plate"
+                    class="hero-dish-img" id="hero-dish-img">
+            </div>
+        </div>
+
+        <!-- Torn paper style wave divider transitioning to white section -->
+        <div class="hero-divider">
+            <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,0 Q360,50 720,50 T1440,0 L1440,80 L0,80 Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       3. About Us Section (Light Background)
+       ========================================================================== -->
+    <section class="light-section about" id="about">
+        <div class="container about-grid">
+            <div class="about-image animate fade-up">
+                <img src="assets/curry_bowl.png" alt="Sri Lankan Spices and Claypots Platter"
+                    style="border-radius: var(--radius-md);">
+                <div class="about-badge-card">
+                    <h4 data-translate="about_experience_val">15+</h4>
+                    <p data-translate="about_experience_txt">Years of Culinary Excellence</p>
+                </div>
+            </div>
+
+            <div class="about-info animate fade-left">
+                <span class="badge badge-gold" data-translate="about_tag">Our Story</span>
+                <h2 data-translate="about_title">Blending Tradition With Global Culinary Artistry</h2>
+                <p data-translate="about_desc_1">
+                    At Ceylon Fusion, we believe that dining is an adventure of heritage. Sri Lankan cuisine is famous
+                    for its bold heat and complex aromatics, but we didn't stop there. We take classic island
+                    preparations—like slow-cooked crab curry and fresh claypot dhal—and elevate them with modern
+                    textures and presentations from around the world.
+                </p>
+                <p data-translate="about_desc_2">
+                    Whether you are a local seeking a nostalgic flavor served with a modern flair, or a foreign traveler
+                    eager to explore the spices of Sri Lanka without overwhelming fire, our kitchen is designed to be
+                    your home.
+                </p>
+                <div class="signature-container">
+                    <div>
+                        <p style="font-weight: 600; margin-bottom: 0; color: var(--dark);">Executive Chef</p>
+                        <span class="signature-img" data-translate="about_chef_sig">Nuwan Perera</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       4. Why Choose Us Section (Light Background Flow)
+       ========================================================================== -->
+    <section class="light-section features" id="why-us">
+        <div class="container">
+            <div class="section-header animate fade-up">
+                <p data-translate="why_tag">Why Us</p>
+                <h2 data-translate="why_title">What Sets Us Apart</h2>
+            </div>
+
+            <div class="features-grid">
+                <!-- Card 1 -->
+                <div class="feature-card animate scale-card">
+                    <div class="feature-icon"><i class="fa-solid fa-leaf"></i></div>
+                    <h3 data-translate="f1_title">Organic Ceylon Spices</h3>
+                    <p data-translate="f1_desc">We source our spices directly from family farms in Matale and Kandy,
+                        ensuring uncompromised flavor.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="feature-card animate scale-card" style="transition-delay: 0.15s;">
+                    <div class="feature-icon"><i class="fa-solid fa-star"></i></div>
+                    <h3 data-translate="f2_title">Global Standards</h3>
+                    <p data-translate="f2_desc">Our kitchen operates under five-star international hygiene, plating, and
+                        service quality benchmarks.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="feature-card animate scale-card" style="transition-delay: 0.3s;">
+                    <div class="feature-icon"><i class="fa-solid fa-utensils"></i></div>
+                    <h3 data-translate="f3_title">Tailored For All</h3>
+                    <p data-translate="f3_desc">Adjustable spice levels and dual-mode menus welcoming both local food
+                        lovers and foreign tourists.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       5. Signature Dishes / Menu Section (Dark Background)
+       ========================================================================== -->
+    <section class="dark-section menu-section" id="menu">
+        <div class="container">
+            <div class="section-header animate fade-up">
+                <p data-translate="menu_tag">Our Specials</p>
+                <h2 data-translate="menu_title">Our Chef's Masterpieces</h2>
+            </div>
+
+            <!-- Category Tabs -->
+            <div class="menu-filters animate fade-up">
+                <button class="filter-btn active" data-filter="all" data-translate="filter_all">All</button>
+                <button class="filter-btn" data-filter="classics" data-translate="filter_classics">Sri Lankan
+                    Classics</button>
+                <button class="filter-btn" data-filter="fusion" data-translate="filter_fusion">Fusion Specials</button>
+                <button class="filter-btn" data-filter="seafood" data-translate="filter_seafood">Seafood</button>
+                <button class="filter-btn" data-filter="vegetarian" data-translate="filter_veg">Vegetarian</button>
+                <button class="filter-btn" data-filter="desserts" data-translate="filter_desserts">Desserts</button>
+                <button class="filter-btn" data-filter="beverages" data-translate="filter_beverages">Beverages</button>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="menu-grid">
+                <!-- Item 1: Hopper Tower -->
+                <div class="menu-card animate scale-card" data-category="classics">
+                    <div class="menu-img-container">
+                        <img src="assets/hero_dish.png" alt="Signature Hopper Tower" class="menu-card-img">
+                        <div class="menu-tags">
+                            <span class="badge badge-gold">⭐ Most Ordered</span>
+                            <span class="badge badge-purple" data-translate="filter_classics">Sri Lankan Classics</span>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3 class="menu-card-title">Signature Hopper Tower</h3>
+                            <span class="menu-card-price" data-lkr-price="1200">₨ 1,200</span>
+                        </div>
+                        <p class="menu-card-desc">Crispy hopper bowls stacked tall, served with spiced caramelized onion
+                            seeni sambol and creamy coconut milk gravy.</p>
+                        <div class="menu-card-footer">
+                            <div class="dish-spiciness">
+                                <span data-translate="spicy_med">Medium Spice</span>
+                                <i class="fa-solid fa-pepper-hot"></i>
+                                <i class="fa-solid fa-pepper-hot"></i>
+                            </div>
+                            <a href="#reserve" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.75rem;"
+                                data-translate="btn_order">Reserve Meal</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2: Seafood Platter -->
+                <div class="menu-card animate scale-card" data-category="seafood" style="transition-delay: 0.15s;">
+                    <div class="menu-img-container">
+                        <img src="assets/seafood_platter.png" alt="Devilled Seafood Platter" class="menu-card-img">
+                        <div class="menu-tags">
+                            <span class="badge badge-gold">🔥 Chef Recommended</span>
+                            <span class="badge badge-purple" data-translate="filter_seafood">Seafood</span>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3 class="menu-card-title">Devilled Seafood Platter</h3>
+                            <span class="menu-card-price" data-lkr-price="3600">₨ 3,600</span>
+                        </div>
+                        <p class="menu-card-desc">Premium prawns, calamari, and local lagoon crab wok-tossed in a spicy
+                            sweet red chilli reduction and banana peppers.</p>
+                        <div class="menu-card-footer">
+                            <div class="dish-spiciness">
+                                <span data-translate="spicy_hot">Sri Lankan Hot</span>
+                                <i class="fa-solid fa-pepper-hot"></i>
+                                <i class="fa-solid fa-pepper-hot"></i>
+                                <i class="fa-solid fa-pepper-hot"></i>
+                            </div>
+                            <a href="#reserve" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.75rem;"
+                                data-translate="btn_order">Reserve Meal</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3: Ceylon Curry Bowl -->
+                <div class="menu-card animate scale-card" data-category="classics" style="transition-delay: 0.3s;">
+                    <div class="menu-img-container">
+                        <img src="assets/curry_bowl.png" alt="Ceylon Curry Bowl" class="menu-card-img">
+                        <div class="menu-tags">
+                            <span class="badge badge-gold">🥥 Traditional</span>
+                            <span class="badge badge-purple" data-translate="filter_classics">Sri Lankan Classics</span>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3 class="menu-card-title">Ceylon Curry Bowl</h3>
+                            <span class="menu-card-price" data-lkr-price="1800">₨ 1,800</span>
+                        </div>
+                        <p class="menu-card-desc">Red basmati rice surrounded by slow-cooked lagoon crab curry, creamy
+                            claypot dhal, and fresh coconut pol sambol.</p>
+                        <div class="menu-card-footer">
+                            <div class="dish-spiciness">
+                                <span data-translate="spicy_med">Medium Spice</span>
+                                <i class="fa-solid fa-pepper-hot"></i>
+                                <i class="fa-solid fa-pepper-hot"></i>
+                            </div>
+                            <a href="#reserve" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.75rem;"
+                                data-translate="btn_order">Reserve Meal</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4: Modern Kottu Fusion -->
+                <div class="menu-card animate scale-card" data-category="fusion">
+                    <div class="menu-img-container">
+                        <img src="assets/seafood_platter.png" alt="Modern Beef Kottu Fusion" class="menu-card-img"
+                            style="filter: hue-rotate(15deg);">
+                        <div class="menu-tags">
+                            <span class="badge badge-gold">✨ Fusion Special</span>
+                            <span class="badge badge-purple" data-translate="filter_fusion">Fusion Specials</span>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3 class="menu-card-title">Modern Beef Kottu Fusion</h3>
+                            <span class="menu-card-price" data-lkr-price="2100">₨ 2,100</span>
+                        </div>
+                        <p class="menu-card-desc">Flaky shredded flatbread stir-fried with tender beef strips, farm
+                            vegetables, eggs, and finished with a rich French red wine reduction.</p>
+                        <div class="menu-card-footer">
+                            <div class="dish-spiciness">
+                                <span data-translate="spicy_hot">Sri Lankan Hot</span>
+                                <i class="fa-solid fa-pepper-hot"></i>
+                                <i class="fa-solid fa-pepper-hot"></i>
+                                <i class="fa-solid fa-pepper-hot"></i>
+                            </div>
+                            <a href="#reserve" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.75rem;"
+                                data-translate="btn_order">Reserve Meal</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5: Tropical Passion Cocktail -->
+                <div class="menu-card animate scale-card" data-category="beverages" style="transition-delay: 0.15s;">
+                    <div class="menu-img-container">
+                        <img src="assets/tropical_drink.png" alt="Tropical Passion Cocktail" class="menu-card-img">
+                        <div class="menu-tags">
+                            <span class="badge badge-gold">🍹 Refreshing</span>
+                            <span class="badge badge-purple" data-translate="filter_beverages">Beverages</span>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3 class="menu-card-title">Tropical Passion Mocktail</h3>
+                            <span class="menu-card-price" data-lkr-price="900">₨ 900</span>
+                        </div>
+                        <p class="menu-card-desc">Fresh local passionfruit pulp mixed with coconut water, mint leaves,
+                            and a dash of lime juice, served with glowing gold crystals.</p>
+                        <div class="menu-card-footer">
+                            <div class="dish-spiciness">
+                                <span style="color: var(--gray);" data-translate="filter_beverages">Beverages</span>
+                            </div>
+                            <a href="#reserve" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.75rem;"
+                                data-translate="btn_order">Reserve Meal</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6: Deconstructed Watalappan -->
+                <div class="menu-card animate scale-card" data-category="desserts" style="transition-delay: 0.3s;">
+                    <div class="menu-img-container">
+                        <img src="assets/tropical_dessert.png" alt="Deconstructed Watalappan" class="menu-card-img">
+                        <div class="menu-tags">
+                            <span class="badge badge-gold">🍮 Dessert</span>
+                            <span class="badge badge-purple" data-translate="filter_desserts">Desserts</span>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3 class="menu-card-title">Deconstructed Watalappan</h3>
+                            <span class="menu-card-price" data-lkr-price="750">₨ 750</span>
+                        </div>
+                        <p class="menu-card-desc">Traditional cardamon-infused coconut custard modernly plated with
+                            toasted cashew crumbles and kithul treacle reduction syrup.</p>
+                        <div class="menu-card-footer">
+                            <div class="dish-spiciness">
+                                <span style="color: var(--gray);" data-translate="filter_desserts">Desserts</span>
+                            </div>
+                            <a href="#reserve" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.75rem;"
+                                data-translate="btn_order">Reserve Meal</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       6. Make To Your Taste Section (Light Background)
+       ========================================================================== -->
+    <section class="light-section customizer-section" id="customizer">
+        <div class="container">
+            <div class="section-header animate fade-up">
+                <p data-translate="custom_tag">Interactive Kitchen</p>
+                <h2 data-translate="custom_title">Customize Your Plate To Taste</h2>
+                <p data-translate="custom_desc" style="color: #666666; max-width: 600px; margin: 10px auto 0;">Select
+                    your preferred base carb, local curry, and traditional sambol to preview your final platter. Watch
+                    the price adapt instantly to your choices and selected currency.</p>
+            </div>
+
+            <div class="customizer-box animate scale-card">
+                <!-- Left: Options selectors -->
+                <div class="customizer-options">
+                    <!-- Step 1: Base -->
+                    <div class="customizer-step">
+                        <h3 data-translate="custom_base"><span class="step-number">1</span> Choose Base Carb</h3>
+                        <div class="selector-grid">
+                            <div class="selector-item" data-group="base" data-value="plain_hopper">
+                                <i class="fa-solid fa-bowl-food"></i>
+                                <span>Plain Hopper</span>
+                            </div>
+                            <div class="selector-item active" data-group="base" data-value="egg_hopper">
+                                <i class="fa-solid fa-egg"></i>
+                                <span>Egg Hopper</span>
+                            </div>
+                            <div class="selector-item" data-group="base" data-value="string_hopper">
+                                <i class="fa-solid fa-stroopwafel"></i>
+                                <span>String Hoppers</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Curry -->
+                    <div class="customizer-step">
+                        <h3 data-translate="custom_curry"><span class="step-number">2</span> Choose Main Curry</h3>
+                        <div class="selector-grid">
+                            <div class="selector-item active" data-group="curry" data-value="chicken">
+                                <i class="fa-solid fa-hotdog"></i>
+                                <span>Chicken Curry</span>
+                            </div>
+                            <div class="selector-item" data-group="curry" data-value="fish_ambul">
+                                <i class="fa-solid fa-fish"></i>
+                                <span>Ambulthiyal</span>
+                            </div>
+                            <div class="selector-item" data-group="curry" data-value="dhal">
+                                <i class="fa-solid fa-bowl-rice"></i>
+                                <span>Claypot Dhal</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Sambol -->
+                    <div class="customizer-step">
+                        <h3 data-translate="custom_sambol"><span class="step-number">3</span> Choose Accompaniment</h3>
+                        <div class="selector-grid">
+                            <div class="selector-item active" data-group="sambol" data-value="pol_sambol">
+                                <i class="fa-solid fa-pepper-hot"></i>
+                                <span>Pol Sambol</span>
+                            </div>
+                            <div class="selector-item" data-group="sambol" data-value="seeni_sambol">
+                                <i class="fa-solid fa-ice-cream"></i>
+                                <span>Seeni Sambol</span>
+                            </div>
+                            <div class="selector-item" data-group="sambol" data-value="lunu_miris">
+                                <i class="fa-solid fa-fire"></i>
+                                <span>Lunu Miris</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Spice level slider -->
+                    <div class="customizer-step">
+                        <h3 data-translate="custom_spice"><span class="step-number">4</span> Select Heat Level</h3>
+                        <div class="spice-slider-container">
+                            <input type="range" min="1" max="4" value="2" class="spice-slider" id="spice-level-slider"
+                                aria-label="Spice level slider">
+                            <div class="spice-labels">
+                                <span data-translate="spicy_mild">Mild Spice</span>
+                                <span class="active" data-translate="spicy_med">Medium Spice</span>
+                                <span data-translate="spicy_hot">Sri Lankan Hot</span>
+                                <span data-translate="spicy_flaming">Flaming Hot</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Preview summary card -->
+                <div class="customizer-preview">
+                    <div>
+                        <h3 class="preview-title" data-translate="custom_preview">Your Custom Platter</h3>
+                        <div class="preview-list">
+                            <div class="preview-item">
+                                <span data-translate="custom_base">Base Carb</span>
+                                <span id="preview-base-val">Gourmet Egg Hopper</span>
+                            </div>
+                            <div class="preview-item">
+                                <span data-translate="custom_curry">Main Curry</span>
+                                <span id="preview-curry-val">Spicy Ceylon Chicken</span>
+                            </div>
+                            <div class="preview-item">
+                                <span data-translate="custom_sambol">Accompaniment</span>
+                                <span id="preview-sambol-val">Fresh Coconut Pol Sambol</span>
+                            </div>
+                            <div class="preview-item">
+                                <span data-translate="custom_spice">Heat Level</span>
+                                <span id="preview-spice-val" style="color: var(--gold);">Medium Spice (Fusion
+                                    Style)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="preview-total">
+                            <span data-translate="custom_total" style="font-weight: 500;">Estimated Price:</span>
+                            <h4 id="preview-total-val">₨ 1,050</h4>
+                        </div>
+                        <button class="btn btn-primary" id="customizer-book-btn" style="width: 100%; margin-top: 20px;"
+                            data-translate="custom_book_btn">
+                            Reserve This Custom Plate
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       7. Chef's Special (Dark Background)
+       ========================================================================== -->
+    <section class="dark-section chef-section" id="chef">
+        <div class="container chef-grid">
+            <div class="chef-image animate fade-up">
+                <img src="assets/chef_nuwan.png" alt="Executive Chef Nuwan Perera cooking"
+                    style="width:100%; border-radius: var(--radius-md);">
+                <div class="chef-experience-tag">
+                    15+ Years Experience
+                </div>
+            </div>
+
+            <div class="chef-quote-box animate fade-left">
+                <span class="badge badge-purple" data-translate="chef_tag">The Masterpiece Creator</span>
+                <h2 class="chef-title" data-translate="chef_title">Meet Executive Chef Nuwan Perera</h2>
+                <p class="chef-quote" data-translate="chef_quote">
+                    "Authentic Sri Lankan cooking is an ancestral art. By introducing contemporary culinary methods, we
+                    create bridges that let foreign guests discover our flavors while giving locals an exciting new
+                    perspective."
+                </p>
+                <p class="chef-bio" data-translate="chef_bio">
+                    With over 15 years heading Michelin-starred fusion dining rooms in London and Melbourne, Chef Nuwan
+                    returned to Colombo to redefine contemporary island gastronomy. His signature style focuses on
+                    hyper-local ingredients, precise sous-vide techniques, and artistic plating.
+                </p>
+                <div class="chef-signature" data-translate="about_chef_sig">
+                    Nuwan Perera
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       8. Food Gallery Section (Light Background)
+       ========================================================================== -->
+    <section class="light-section gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-header animate fade-up">
+                <p data-translate="gallery_tag">Visual Feast</p>
+                <h2 data-translate="gallery_title">Snapshots From Our Bistro</h2>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Item 1 -->
+                <div class="gallery-item animate scale-card">
+                    <img src="assets/hero_dish.png" alt="Gourmet Hopper Tower presentation">
+                    <div class="gallery-overlay">
+                        <h4 data-translate="gallery_h_hopper">Gourmet Hopper Tower</h4>
+                        <span data-translate="filter_classics">Sri Lankan Classics</span>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="gallery-item animate scale-card" style="transition-delay: 0.1s;">
+                    <img src="assets/seafood_platter.png" alt="Spicy Seafood cooking presentation">
+                    <div class="gallery-overlay">
+                        <h4 data-translate="gallery_h_seafood">Devilled Seafood Platter</h4>
+                        <span data-translate="filter_seafood">Seafood</span>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="gallery-item animate scale-card" style="transition-delay: 0.2s;">
+                    <img src="assets/curry_bowl.png" alt="Sri Lankan Rice and Curries presentation">
+                    <div class="gallery-overlay">
+                        <h4 data-translate="gallery_h_curry">Ceylon Curry Bowl</h4>
+                        <span data-translate="filter_classics">Sri Lankan Classics</span>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="gallery-item animate scale-card">
+                    <img src="assets/tropical_drink.png" alt="Signature mocktail drink served glass">
+                    <div class="gallery-overlay">
+                        <h4 data-translate="gallery_h_drink">Tropical Passion Mocktail</h4>
+                        <span data-translate="filter_beverages">Beverages</span>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="gallery-item animate scale-card" style="transition-delay: 0.1s;">
+                    <img src="assets/tropical_dessert.png" alt="Ceylon gourmet watalappan plated dessert">
+                    <div class="gallery-overlay">
+                        <h4 data-translate="gallery_h_dessert">Deconstructed Watalappan</h4>
+                        <span data-translate="filter_desserts">Desserts</span>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="gallery-item animate scale-card" style="transition-delay: 0.2s;">
+                    <img src="assets/chef_nuwan.png" alt="Premium Dining Lounge Interior">
+                    <div class="gallery-overlay">
+                        <h4 data-translate="gallery_h_ambiance">Luxury Lounge Interior</h4>
+                        <span data-translate="hero_subtitle">Ambiance</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Lightbox Modal -->
+    <div class="lightbox" id="lightbox-modal">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightbox-close">&times;</button>
+            <img src="" alt="Popup Lightbox Food Zoom" id="lightbox-img">
+            <div class="lightbox-caption" id="lightbox-caption">Caption text</div>
+        </div>
+    </div>
+
+    <!-- ==========================================================================
+       9. Customer Testimonials Section (Dark Background)
+       ========================================================================== -->
+    <section class="dark-section testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-header animate fade-up">
+                <p data-translate="review_tag">Testimonials</p>
+                <h2 data-translate="review_title">Loved By Locals & Foreigners</h2>
+            </div>
+
+            <div class="testimonials-slider animate zoom-in">
+                <div class="slider-container">
+                    <!-- Slide 1 -->
+                    <div class="testimonial-slide">
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The best fusion dining experience we had in Colombo. Every dish is
+                            a delicate balance of authentic ceylon heat and modern European plating. The passionfruit
+                            mocktail is a must-try!"</p>
+                        <h4 class="testimonial-author">Sarah Mitchell</h4>
+                        <p class="testimonial-location">London, United Kingdom</p>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="testimonial-slide">
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"An absolutely outstanding hopper tower! Reimagining our traditional
+                            flavors while maintaining authenticity is truly remarkable. A perfect place to dine with
+                            friends and family."</p>
+                        <h4 class="testimonial-author">Dilshan Perera</h4>
+                        <p class="testimonial-location">Colombo, Sri Lanka</p>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="testimonial-slide">
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"We loved how we could customize our spice levels! The claypot dhal
+                            was extremely smooth and flavor-rich without burning our tongues. The staff was incredibly
+                            welcoming and spoke fluent English."</p>
+                        <h4 class="testimonial-author">Yuki Tanaka</h4>
+                        <p class="testimonial-location">Tokyo, Japan</p>
+                    </div>
+                </div>
+
+                <!-- Slide Dots indicators -->
+                <div class="slider-dots">
+                    <span class="slider-dot active"></span>
+                    <span class="slider-dot"></span>
+                    <span class="slider-dot"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       10. Reservation Form Section (Light Background)
+       ========================================================================== -->
+    <section class="light-section reservation-section" id="reserve">
+        <div class="container">
+            <div class="section-header animate fade-up">
+                <p data-translate="reserve_tag">Reservations</p>
+                <h2 data-translate="reserve_title">Book Your Dining Table</h2>
+            </div>
+
+            <div class="reservation-box animate scale-card">
+                <form class="reservation-form" id="reservation-form">
+                    <!-- Guest Name -->
+                    <div class="form-group">
+                        <label for="reserve-name" data-translate="form_name">Full Name *</label>
+                        <input type="text" id="reserve-name" required data-translate-placeholder="form_name">
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="reserve-email" data-translate="form_email">Email Address *</label>
+                        <input type="email" id="reserve-email" required placeholder="example@domain.com">
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="form-group">
+                        <label for="reserve-phone" data-translate="form_phone">Phone Number *</label>
+                        <input type="tel" id="reserve-phone" required placeholder="+94 77 123 4567">
+                    </div>
+
+                    <!-- Guests count -->
+                    <div class="form-group">
+                        <label for="reserve-guests" data-translate="form_guests">Number of Guests *</label>
+                        <select id="reserve-guests" required>
+                            <option value="1">1 Person</option>
+                            <option value="2" selected>2 People</option>
+                            <option value="4">4 People</option>
+                            <option value="6">6 People</option>
+                            <option value="8">8+ People (Large Platter)</option>
+                        </select>
+                    </div>
+
+                    <!-- Date -->
+                    <div class="form-group">
+                        <label for="reserve-date" data-translate="form_date">Date of Reservation *</label>
+                        <input type="date" id="reserve-date" required>
+                    </div>
+
+                    <!-- Time -->
+                    <div class="form-group">
+                        <label for="reserve-time" data-translate="form_time">Time Slot *</label>
+                        <select id="reserve-time" required>
+                            <option value="11:30 AM">11:30 AM - Lunch</option>
+                            <option value="01:00 PM">01:00 PM - Lunch</option>
+                            <option value="06:30 PM" selected>06:30 PM - Dinner</option>
+                            <option value="08:00 PM">08:00 PM - Dinner</option>
+                            <option value="09:30 PM">09:30 PM - Dinner</option>
+                        </select>
+                    </div>
+
+                    <!-- Seating Areas -->
+                    <div class="form-group full-width">
+                        <label for="reserve-seating" data-translate="form_seating">Preferred Seating Area *</label>
+                        <select id="reserve-seating" required>
+                            <option value="indoor" data-translate="form_seat_indoor">Indoor Premium (Glassmorphism A/C)
+                            </option>
+                            <option value="outdoor" data-translate="form_seat_outdoor">Outdoor Garden Lounge (Panoramic
+                                Sky view)</option>
+                            <option value="private" data-translate="form_seat_private">Private Dining Suite
+                                (Foreign/Business VIP)</option>
+                        </select>
+                    </div>
+
+                    <!-- Special requests -->
+                    <div class="form-group full-width">
+                        <label for="reserve-requests" data-translate="form_req">Special Requests / Food
+                            Allergies</label>
+                        <textarea id="reserve-requests" rows="4"
+                            placeholder="Vegan options, low spice request, wheelchair accessibility, etc."></textarea>
+                    </div>
+
+                    <div class="form-group full-width" style="margin-top: 15px;">
+                        <button type="submit" class="btn btn-primary" style="width: 100%;"
+                            data-translate="form_submit">Confirm Booking</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Success Modal Overlay -->
+    <div class="modal-overlay" id="success-modal-overlay">
+        <div class="success-modal">
+            <div class="success-icon"><i class="fa-solid fa-check"></i></div>
+            <h3 data-translate="modal_success_title">✓ Reservation Confirmed</h3>
+            <p data-translate="modal_success_desc">Thank you for choosing Ceylon Fusion. We have reserved a premium
+                table for your dining experience.</p>
+
+            <div class="booking-receipt">
+                <div class="receipt-row">
+                    <span data-translate="modal_booking_id">Booking ID</span>
+                    <span class="booking-id-val" id="modal-val-id">CF-2026-1045</span>
+                </div>
+                <div class="receipt-row">
+                    <span data-translate="modal_name">Guest Name</span>
+                    <span id="modal-val-name">Kavishka</span>
+                </div>
+                <div class="receipt-row">
+                    <span data-translate="modal_guests">Guests Count</span>
+                    <span id="modal-val-guests">2 Guests</span>
+                </div>
+                <div class="receipt-row">
+                    <span data-translate="modal_date">Date & Time</span>
+                    <span id="modal-val-datetime">2026-06-25 @ 06:30 PM</span>
+                </div>
+                <div class="receipt-row">
+                    <span data-translate="modal_seating">Seating</span>
+                    <span id="modal-val-seating">Indoor Premium (A/C)</span>
+                </div>
+            </div>
+
+            <div class="modal-buttons">
+                <button class="btn btn-primary" id="modal-btn-download" data-translate="modal_btn_receipt">Download
+                    Receipt</button>
+                <button class="btn btn-secondary" id="modal-btn-another" data-translate="modal_btn_another">Book Another
+                    Table</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================================================
+       11. Contact & Map Section (Dark Background)
+       ========================================================================== -->
+    <section class="dark-section contact-section" id="contact">
+        <div class="container">
+            <div class="section-header animate fade-up">
+                <p data-translate="contact_tag">Find Us</p>
+                <h2 data-translate="contact_title">Hours & Location</h2>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info-list animate fade-up">
+                    <!-- Address -->
+                    <div class="contact-item">
+                        <div class="contact-item-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                        <div class="contact-item-details">
+                            <h4 data-translate="contact_address_h">Address</h4>
+                            <p data-translate="contact_address_d">42 Galle Face Center Road, Colombo 03, Sri Lanka</p>
+                        </div>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="contact-item">
+                        <div class="contact-item-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                        <div class="contact-item-details">
+                            <h4 data-translate="contact_phone_h">Phone Support</h4>
+                            <p data-translate="contact_phone_d">+94 11 234 5678 / +94 77 123 4567</p>
+                        </div>
+                    </div>
+
+                    <!-- Hours -->
+                    <div class="contact-item">
+                        <div class="contact-item-icon"><i class="fa-solid fa-clock"></i></div>
+                        <div class="contact-item-details">
+                            <h4 data-translate="contact_hours_h">Opening Hours</h4>
+                            <p data-translate="contact_hours_d">Mon - Sun: 11:00 AM - 11:00 PM (Last order 10:15 PM)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map iframe container -->
+                <div class="map-container animate fade-left">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.7984852936746!2d79.84279761536768!3d6.926673195000574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae259424bb09ca7%3A0xe104cfbc17675cd3!2sGalle%20Face%20Green!5e0!3m2!1sen!2slk!4v1680000000000!5m2!1sen!2slk"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        title="Google Maps Direction to Ceylon Fusion Galle Face, Colombo">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       12. Footer (Dark Background)
+       ========================================================================== -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="#" class="logo" style="margin-bottom: 20px; font-size: 1.6rem;" data-translate="brand">
+                    Ceylon<span>Fusion</span>
+                </a>
+                <p data-translate="footer_desc">Redefining island culinary arts. A luxury dining destination in Sri
+                    Lanka tailored for global gourmands.</p>
+                <div class="footer-socials">
+                    <a href="https://facebook.com" class="social-link" aria-label="Follow Ceylon Fusion on Facebook"
+                        target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" class="social-link" aria-label="Follow Ceylon Fusion on Instagram"
+                        target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com" class="social-link" aria-label="Follow Ceylon Fusion on Twitter"
+                        target="_blank" rel="noopener"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://tripadvisor.com" class="social-link"
+                        aria-label="Follow Ceylon Fusion on TripAdvisor" target="_blank" rel="noopener"><i
+                            class="fa-brands fa-tripadvisor"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 data-translate="footer_links_h">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home" data-translate="nav_home">Home</a></li>
+                    <li><a href="#about" data-translate="nav_about">Our Story</a></li>
+                    <li><a href="#menu" data-translate="nav_menu">Signature Menu</a></li>
+                    <li><a href="#customizer" data-translate="nav_customizer">Make to Taste</a></li>
+                    <li><a href="#reserve" data-translate="nav_reserve">Book a Table</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 data-translate="footer_links_h">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#chef" data-translate="nav_chef">Chef Nuwan</a></li>
+                    <li><a href="#gallery" data-translate="nav_gallery">Gallery</a></li>
+                    <li><a href="#testimonials" data-translate="nav_reviews">Reviews</a></li>
+                    <li><a href="#contact" data-translate="contact_tag">Find Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 data-translate="footer_hours_h">Opening Times</h4>
+                <ul class="footer-hours-list">
+                    <li><span>Mon - Fri</span> <span>11:00 AM - 11:00 PM</span></li>
+                    <li><span>Sat - Sun</span> <span>11:00 AM - 11:30 PM</span></li>
+                    <li><span>Poya Holidays</span> <span>Closed (Wine Bar Only)</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom container">
+            <p data-translate="footer_copyright">&copy; 2026 Ceylon Fusion. All rights reserved. Designed for Sri Lankan
+                & Foreign Guests.</p>
+        </div>
+    </footer>
+
+    <!-- ==========================================================================
+       Floating Quick Actions
+       ========================================================================== -->
+    <div class="floating-actions" id="floating-actions-bar">
+        <!-- WhatsApp -->
+        <a href="https://wa.me/94771234567?text=I'd%20like%20to%20reserve%20a%20table%20at%20Ceylon%20Fusion%20Bistro."
+            class="floating-btn btn-whatsapp" target="_blank" rel="noopener" title="WhatsApp Reservation support"
+            aria-label="Contact Ceylon Fusion Reservation Support on WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <!-- Phone (Call Now) -->
+        <a href="tel:+94112345678" class="floating-btn btn-call" title="Call Support Now"
+            aria-label="Call Ceylon Fusion Customer Support">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+
+        <!-- Google Maps -->
+        <a href="https://maps.google.com/?q=Galle+Face+Green,+Colombo,+Sri+Lanka" class="floating-btn btn-maps"
+            target="_blank" rel="noopener" title="Get Directions on Google Maps"
+            aria-label="Get Directions to Ceylon Fusion on Google Maps">
+            <i class="fa-solid fa-map-location-dot"></i>
+        </a>
+    </div>
+
+    <!-- Core Script File -->
+    <script src="app.js"></script>
+</body>
+
+</html>
